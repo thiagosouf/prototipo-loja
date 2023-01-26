@@ -1,13 +1,17 @@
 import styled from "styled-components";
 import logo from "../../assets/logo.webp";
-import banner from "../../../../bannerlongo.webp";
+import banner from "../../../../bannerlongofrete.webp";
+import bannerm from "../../../../banner.webp";
 import { useState } from "react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import SearchIcon from "@mui/icons-material/Search";
+import { red } from "@mui/material/colors";
+import MenuH from "../menuh/MenuH";
 // import axios from "axios";
 
 export default function Topo(props) {
+  const [itens, setItens] = useState(0);
   const [buscar, setBuscar] = useState("");
 
   function fazerBusca(event) {
@@ -46,11 +50,14 @@ export default function Topo(props) {
             Faça <a href=""> LOGIN</a> ou crie seu <a href="">CADASTRO</a>
           </Entrar>
         </Login>
-        <Carrinho sx={{ typography: { fontSize: 35 } }} />
+        <CarrinhoItens>
+          <Carrinho sx={{ typography: { fontSize: 35 } }} />
+          {itens ? <Itens>{itens}</Itens> : <></>}
+        </CarrinhoItens>
       </ContainerTopo>
-      Categorias
+      <MenuH />
       <Promocao>
-        <Banner src={banner} />
+        <Banner />
       </Promocao>
     </>
   );
@@ -137,14 +144,43 @@ const Perfil = styled(AccountCircleIcon)`
   cursor: pointer;
 `;
 
+const CarrinhoItens = styled.div`
+  display: flex;
+`;
+
 const Carrinho = styled(LocalGroceryStoreIcon)`
   cursor: pointer;
+`;
+
+const Itens = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  /* height: 3000px; */
+  position: relative;
+  left: -25%;
+  border-radius: 50px;
+  height: 17px;
+  width: 17px;
+  border: 4px solid red;
+  background-color: #f30776;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
 `;
 
 const Promocao = styled.div`
   display: flex;
 `;
 
-const Banner = styled.img`
+const Banner = styled.div`
+  background-color: #074e1f;
+  background-image: url(${banner});
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100vw;
+  @media (max-width: 540px) {
+    background-image: url(${bannerm});
+  }
 `;
