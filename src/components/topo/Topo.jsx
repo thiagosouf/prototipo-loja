@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import logo from "../../assets/logo.webp";
-import banner from "../../../../bannerlongofrete.webp";
-import bannerm from "../../../../banner.webp";
+import logo from "../../assets/logo.png";
+import banner from "../../bannerlongofrete.webp";
+import bannerm from "../../assets/banner.webp";
 import { useState } from "react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import SearchIcon from "@mui/icons-material/Search";
-import { red } from "@mui/material/colors";
 import MenuH from "../menuh/MenuH";
 // import axios from "axios";
 
