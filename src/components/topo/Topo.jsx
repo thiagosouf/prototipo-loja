@@ -99,7 +99,7 @@ const Formulario = styled.form`
     width: 40vw;
     border-radius: 5px 0px 0px 5px;
     font-size: 20px;
-    border: 2px solid red;
+    border: 2px solid #ee2d2b;
     @media (max-width: 760px) {
       width: 30vw;
     }
@@ -116,7 +116,7 @@ const Formulario = styled.form`
 const BotaoLupa = styled.button`
   max-width: 10vw;
   height: 30px;
-  background: red;
+  background: #ee2d2b;
   color: #ffffff;
   border-radius: 0px 5px 5px 0px;
   display: flex;
