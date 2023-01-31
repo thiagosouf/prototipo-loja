@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Slide } from "react-slideshow-image";
-import propaganda1 from "../../../../propaganda.webp";
-import propaganda2 from "../../../../propaganda2.webp";
-import propaganda3 from "../../../../propaganda3.webp";
-import propaganda4 from "../../../../propaganda4.webp";
-import propaganda5 from "../../../../propaganda5.webp";
-import propaganda6 from "../../../../propaganda6.webp";
+import propaganda1 from "../../assets/propaganda.webp";
+import propaganda2 from "../../assets/propaganda2.webp";
+import propaganda3 from "../../assets/propaganda3.webp";
+import propaganda4 from "../../assets/propaganda4.webp";
+import propaganda5 from "../../assets/propaganda5.webp";
+import propaganda6 from "../../assets/propaganda6.webp";
 import "react-slideshow-image/dist/styles.css";
 
 export default function SlidePrincipal(props) {
