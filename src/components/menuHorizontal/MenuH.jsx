@@ -21,11 +21,11 @@ const Menu = styled.div`
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
   ul {
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
-
     padding: 5px 0px;
     a {
       color: white;
@@ -35,7 +35,7 @@ const Menu = styled.div`
 
 const MenuVertical = styled(MenuIcon)`
   cursor: pointer;
-  margin-left: 3vw;
+  /* margin-left: 3vw; */
   :hover {
     border: 2px solid #558908;
     border-radius: 50px;
