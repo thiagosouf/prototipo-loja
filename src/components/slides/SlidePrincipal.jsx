@@ -50,6 +50,10 @@ const Propaganda = styled.div`
     justify-content: center;
     background-size: 100vw 100%;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 300px;
+    @media (max-width: 760px) {
+      background-size: 100%;
+      height: 100px;
+    }
   }
 `;
