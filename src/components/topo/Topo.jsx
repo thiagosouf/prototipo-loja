@@ -7,7 +7,7 @@ import { useState } from "react";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 import SearchIcon from "@mui/icons-material/Search";
-import MenuH from "../menuh/MenuH";
+import MenuH from "../menuHorizontal/MenuH";
 // import axios from "axios";
 
 export default function Topo(props) {

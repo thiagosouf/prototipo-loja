@@ -3,7 +3,6 @@ import { useState } from "react";
 import GlobalStyles from "./styles/Style";
 import Home from "./home/Home";
 import Topo from "./topo/Topo";
-import MenuH from "./menuh/MenuH";
 
 function App() {
   const [codigo, setCodigo] = useState("");

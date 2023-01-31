@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import SlidePrincipal from "../slides/SlidePrincipal";
 
 export default function Home(props) {
   const { codigo } = props;
-  return <>{codigo ? <Oi>Buscar: {codigo}</Oi> : <>Produtos</>}</>;
+  return (
+    <>
+      <SlidePrincipal></SlidePrincipal>
+      {codigo ? <Oi>Buscar: {codigo}</Oi> : <>Produtos</>}
+    </>
+  );
 }
 
 const Oi = styled.div`
